@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  height: 778px;
+  background: tomato;
+}
+.header_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  background: #010632;
+}
+.header_info_wrapper {
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  height: 100%;
+  background: darkmagenta;
+  justify-content: space-between;
+}
+.header_info_wrapper_fundraising {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.header_info_wrapper_about {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.header_info_wrapper_logo {
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+}
+.header_info_wrapper_donat {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.header_images {
+  width: 1429px;
+  height: 100%;
+  background: darkgreen;
+}
+
+.blue {
+  color: blue;
+}
+
+.yellow {
+  color: yellow;
+}/*# sourceMappingURL=style.css.map */
