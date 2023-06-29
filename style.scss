@@ -53,6 +53,7 @@
         height:100%;
         width: 100%;
         background-repeat: no-repeat;
+        background-size: cover;
         flex-grow: 1;
     }
     &_centr{
@@ -60,6 +61,7 @@
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
+        background-size: cover;
         flex-grow: 1;
     }
     &_right{
@@ -67,6 +69,7 @@
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
+        background-size: cover;
         flex-grow: 1;
     }
 }
@@ -347,4 +350,57 @@
 }
 .yellow{
     color: yellow;
+}
+@media screen and (max-width:375px){
+    .header{
+        &_info{
+            &_wrapper{
+                &_fundraising{
+                    display: none;
+                }
+                &_about{
+                    display: none;
+                }
+                &_logo{
+                    margin: 0 auto;
+                    @include Jost(400,24px)
+                }
+                &_donat{
+                    display: none;
+                }
+            }
+        }
+    }
+    .main{
+        &_help{
+            &_wrapper{
+                display: block;
+                width: 306px;
+                &_text{
+                    width: 295px;
+                    &_title{
+                        @include Istok(700,24px)
+                    }
+                    &_sub-title{
+                        display: none;
+                    }
+                    &_sub-title-mob{
+                        margin-top: 10px;
+                        @include Jost(400,16px);
+                        color: white;
+                    }
+                }
+                &_images{
+                    width: 301px;
+                    height: 263px;
+                    &_one{
+                        flex-grow: 1;
+                    }
+                    &_two{
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
 }

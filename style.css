@@ -50,6 +50,7 @@
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   flex-grow: 1;
 }
 .Preview_centr {
@@ -57,6 +58,7 @@
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   flex-grow: 1;
 }
 .Preview_right {
@@ -64,6 +66,7 @@
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   flex-grow: 1;
 }
 
@@ -360,4 +363,51 @@
 
 .yellow {
   color: yellow;
+}
+
+@media screen and (max-width: 375px) {
+  .header_info_wrapper_fundraising {
+    display: none;
+  }
+  .header_info_wrapper_about {
+    display: none;
+  }
+  .header_info_wrapper_logo {
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .header_info_wrapper_donat {
+    display: none;
+  }
+  .main_help_wrapper {
+    display: block;
+    width: 306px;
+  }
+  .main_help_wrapper_text {
+    width: 295px;
+  }
+  .main_help_wrapper_text_title {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .main_help_wrapper_text_sub-title {
+    display: none;
+  }
+  .main_help_wrapper_text_sub-title-mob {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+  }
+  .main_help_wrapper_images {
+    width: 301px;
+    height: 263px;
+  }
+  .main_help_wrapper_images_one {
+    flex-grow: 1;
+  }
+  .main_help_wrapper_images_two {
+    flex-grow: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
