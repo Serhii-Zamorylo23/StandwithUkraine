@@ -22,7 +22,6 @@
             align-items: center;
             width: 1000px;
             height: 100%;
-            background: darkmagenta;
             justify-content: space-between;
             &_fundraising{
                 @include Jost(400,24px);
@@ -52,20 +51,23 @@
     &_left{
         background: url(/image/Rectangle\ 2\ \(1\).png);
         height:100%;
-        width: 510px;
+        width: 100%;
         background-repeat: no-repeat;
+        flex-grow: 1;
     }
     &_centr{
         background: url(/image/Rectangle\ 30.png);
         height: 100%;
-        width: 534px;
+        width: 100%;
         background-repeat: no-repeat;
+        flex-grow: 1;
     }
     &_right{
         background: url(/image/Rectangle\ 31.png);
         height: 100%;
-        width: 385px;
+        width: 100%;
         background-repeat: no-repeat;
+        flex-grow: 1;
     }
 }
 .main{
@@ -78,9 +80,9 @@
         background: #010632;
         &_wrapper{
             display: flex;
-            width: 1181px;
+            justify-content: space-between;
+            width: 1164px;
             height: 366px;
-            background: firebrick;
             &_text{
                 width: 420px;
                 &_title{
@@ -93,8 +95,252 @@
                     color: white;
                 }
             }
+            &_images{
+                width: 665px;
+                height: 364px;
+                display: flex;
+                justify-content: space-between;
+                &_one{
+                    width: 365px;
+                    height: 251px;
+                    background: url(/image/Rectangle\ 7.png);
+                }
+                &_two{
+                    position: relative;
+                    top: 159px;
+                    width: 265px;
+                    height: 203px;
+                    background: url(/image/Rectangle\ 9.png);
+                }
+            }
         }
     }
+    &_about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 461px;
+        background: #060D49;
+        &_wrapper{
+            display: flex;
+            width: 1165px;
+            height: 364px;
+            justify-content: space-between;
+            align-items: center;
+            &_img{
+                display: flex;
+                width: 665px;
+                height: 364px;
+                justify-content: space-between;
+                &_one{
+                    width: 365px;
+                    height: 251px;
+                    background: url(/image/Rectangle\ 11.png);
+                }
+                &_two{
+                    position: relative;
+                    top: 161px;
+                    width: 265px;
+                    height: 203px;
+                    background: url(/image/Rectangle\ 12.png);
+                }
+            }
+            &_text{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                width: 414px;
+                height: 301px;
+                &_title{
+                    @include Istok(700,48px);
+                    color: white;
+                }
+                &_sub-title{
+                    @include Jost(400,24px);
+                    color: white;
+                }
+            }
+        }
+    }
+    &_Ukraine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 773px;
+        background: #010632;
+        &_wrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 1165px;
+            height: 708px;
+            &_text{
+                width: 780px;
+                height: 138px;
+                @include Istok(700,48px);
+                text-align: center;
+                color: white;
+            }
+            &_imgs{
+                display: flex;
+                width: 100%;
+                height: 549px;
+                justify-content: space-between;
+                &_left-container{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 21px;
+                    width: 765px;
+                    height: 549px;
+                    &_group1{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 764px;
+                        height: 264px;
+                        justify-content: space-between;
+                        &_right-container{
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 21px;
+                            width: 364px;
+                            height: 264px;
+                        }
+                    }
+                    &_group2{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 765px;
+                        height: 264px;
+                    }
+                }
+            }
+        }
+    }
+    &_proects{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 857px;
+        background: rgba(6, 13, 73, 1);
+        &_wrapper{
+            width: 1165px;
+            height: 621px;
+            &_title{
+                text-align: center;
+                @include Istok(700,48px);
+                color:white;
+            }
+            &_container{
+                display: flex;
+                column-gap: 35px;
+                margin-top: 65px;
+                width: 100%;
+                height: 487px;
+                &_card{
+                    display: flex;
+                    flex-direction: column;
+                    width: 365px;
+                    height: 487px;
+                    background: white;
+                    align-items: center;
+                    padding-top: 26px;
+                    &_title{
+                        @include Istok(700,48px)
+                    }
+                    &_sub-title{
+                        padding-top: 9px;
+                        @include Jost(400,24px)
+                    }
+                    &_sub-title2{
+                        @include Jost(400,24px)
+                    }
+                    &_line{
+                        margin-top: 19px;
+                    }
+                    &_button{
+                        width: 235px;
+                        height: 61px;
+                        border: none;
+                        background: #0057FF;
+                        border-radius: 15px;
+                        margin-top: 18px;
+                        @include Jost(400,24px);
+                        color:white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 349px;
+    background: #010632;
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 1065.04px;
+        height: 298px;
+        &_logo{
+            text-align: center;
+            @include Jost(700,48px);
+            color: white;
+        }
+        &_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_politika-container{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                width: 481.332px;
+                height: 151px;
+
+                &_politika-title{
+                    @include Jost(400,24px);
+                    color: white;
+                }
+                &_privacy{
+                    @include Jost(400,24px);
+                    color: white;
+                }
+                &_processing{
+                    @include Jost(400,24px);
+                    color: white;
+                }
+            }
+            &_social-container{
+                display: flex;
+                justify-content: space-between;
+                width: 265.045px;
+                height: 64px;;
+            }
+        }
+
+        &_C{
+            @include Jost(400,24px);
+            color: white;
+            text-align: center;
+        }
+    }
+}
+.style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65.045px;
+    height: 64px;
+    border-radius: 50%;
+    background: yellow;
 }
 .blue{
     color: blue;

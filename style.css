@@ -16,7 +16,6 @@
   align-items: center;
   width: 1000px;
   height: 100%;
-  background: darkmagenta;
   justify-content: space-between;
 }
 .header_info_wrapper_fundraising {
@@ -49,20 +48,23 @@
 .Preview_left {
   background: url(/image/Rectangle\ 2\ \(1\).png);
   height: 100%;
-  width: 510px;
+  width: 100%;
   background-repeat: no-repeat;
+  flex-grow: 1;
 }
 .Preview_centr {
   background: url(/image/Rectangle\ 30.png);
   height: 100%;
-  width: 534px;
+  width: 100%;
   background-repeat: no-repeat;
+  flex-grow: 1;
 }
 .Preview_right {
   background: url(/image/Rectangle\ 31.png);
   height: 100%;
-  width: 385px;
+  width: 100%;
   background-repeat: no-repeat;
+  flex-grow: 1;
 }
 
 .main_help {
@@ -75,9 +77,9 @@
 }
 .main_help_wrapper {
   display: flex;
-  width: 1181px;
+  justify-content: space-between;
+  width: 1164px;
   height: 366px;
-  background: firebrick;
 }
 .main_help_wrapper_text {
   width: 420px;
@@ -92,6 +94,264 @@
   font-weight: 400;
   font-size: 24px;
   color: white;
+}
+.main_help_wrapper_images {
+  width: 665px;
+  height: 364px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_help_wrapper_images_one {
+  width: 365px;
+  height: 251px;
+  background: url(/image/Rectangle\ 7.png);
+}
+.main_help_wrapper_images_two {
+  position: relative;
+  top: 159px;
+  width: 265px;
+  height: 203px;
+  background: url(/image/Rectangle\ 9.png);
+}
+.main_about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 461px;
+  background: #060D49;
+}
+.main_about_wrapper {
+  display: flex;
+  width: 1165px;
+  height: 364px;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_about_wrapper_img {
+  display: flex;
+  width: 665px;
+  height: 364px;
+  justify-content: space-between;
+}
+.main_about_wrapper_img_one {
+  width: 365px;
+  height: 251px;
+  background: url(/image/Rectangle\ 11.png);
+}
+.main_about_wrapper_img_two {
+  position: relative;
+  top: 161px;
+  width: 265px;
+  height: 203px;
+  background: url(/image/Rectangle\ 12.png);
+}
+.main_about_wrapper_text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 414px;
+  height: 301px;
+}
+.main_about_wrapper_text_title {
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+.main_about_wrapper_text_sub-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.main_Ukraine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 773px;
+  background: #010632;
+}
+.main_Ukraine_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1165px;
+  height: 708px;
+}
+.main_Ukraine_wrapper_text {
+  width: 780px;
+  height: 138px;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+}
+.main_Ukraine_wrapper_imgs {
+  display: flex;
+  width: 100%;
+  height: 549px;
+  justify-content: space-between;
+}
+.main_Ukraine_wrapper_imgs_left-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  width: 765px;
+  height: 549px;
+}
+.main_Ukraine_wrapper_imgs_left-container_group1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 764px;
+  height: 264px;
+  justify-content: space-between;
+}
+.main_Ukraine_wrapper_imgs_left-container_group1_right-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  width: 364px;
+  height: 264px;
+}
+.main_Ukraine_wrapper_imgs_left-container_group2 {
+  display: flex;
+  justify-content: space-between;
+  width: 765px;
+  height: 264px;
+}
+.main_proects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 857px;
+  background: rgb(6, 13, 73);
+}
+.main_proects_wrapper {
+  width: 1165px;
+  height: 621px;
+}
+.main_proects_wrapper_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+.main_proects_wrapper_container {
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  margin-top: 65px;
+  width: 100%;
+  height: 487px;
+}
+.main_proects_wrapper_container_card {
+  display: flex;
+  flex-direction: column;
+  width: 365px;
+  height: 487px;
+  background: white;
+  align-items: center;
+  padding-top: 26px;
+}
+.main_proects_wrapper_container_card_title {
+  font-weight: 700;
+  font-size: 48px;
+}
+.main_proects_wrapper_container_card_sub-title {
+  padding-top: 9px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.main_proects_wrapper_container_card_sub-title2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.main_proects_wrapper_container_card_line {
+  margin-top: 19px;
+}
+.main_proects_wrapper_container_card_button {
+  width: 235px;
+  height: 61px;
+  border: none;
+  background: #0057FF;
+  border-radius: 15px;
+  margin-top: 18px;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 349px;
+  background: #010632;
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1065.04px;
+  height: 298px;
+}
+.footer_wrapper_logo {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+.footer_wrapper_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_wrapper_content_politika-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 481.332px;
+  height: 151px;
+}
+.footer_wrapper_content_politika-container_politika-title {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.footer_wrapper_content_politika-container_privacy {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.footer_wrapper_content_politika-container_processing {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.footer_wrapper_content_social-container {
+  display: flex;
+  justify-content: space-between;
+  width: 265.045px;
+  height: 64px;
+}
+.footer_wrapper_C {
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+
+.style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65.045px;
+  height: 64px;
+  border-radius: 50%;
+  background: yellow;
 }
 
 .blue {
