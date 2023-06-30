@@ -49,28 +49,37 @@
     height: 711px;
     background: darkgreen;
     &_left{
-        background: url(/image/Rectangle\ 2\ \(1\).png);
         height:100%;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         flex-grow: 1;
+        &_img{
+            width: 100%;
+            height: 100%;
+        }
     }
     &_centr{
-        background: url(/image/Rectangle\ 30.png);
         height: 100%;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         flex-grow: 1;
+        &_img{
+            width: 100%;
+            height: 100%;
+        }
     }
     &_right{
-        background: url(/image/Rectangle\ 31.png);
-        height: 100%;
         width: 100%;
+        height: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         flex-grow: 1;
+        &_img{
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 .main{
@@ -106,14 +115,20 @@
                 &_one{
                     width: 365px;
                     height: 251px;
-                    background: url(/image/Rectangle\ 7.png);
+                    &_img{
+                        width: 365px;
+                        height: 251px;
+                    }
                 }
                 &_two{
                     position: relative;
                     top: 159px;
                     width: 265px;
                     height: 203px;
-                    background: url(/image/Rectangle\ 9.png);
+                    &_img{
+                        width: 285px;
+                        height: 203px;
+                    }
                 }
             }
         }
@@ -139,14 +154,20 @@
                 &_one{
                     width: 365px;
                     height: 251px;
-                    background: url(/image/Rectangle\ 11.png);
+                    &_png{
+                        width: 365px;
+                        height: 251px;
+                    }
                 }
                 &_two{
                     position: relative;
                     top: 161px;
                     width: 265px;
                     height: 203px;
-                    background: url(/image/Rectangle\ 12.png);
+                    &_png{
+                        width: 265px;
+                        height: 203px;
+                    }
                 }
             }
             &_text{
@@ -371,6 +392,9 @@
             }
         }
     }
+    .Preview{
+        height: 412px;
+    }
     .main{
         &_help{
             &_wrapper{
@@ -391,16 +415,125 @@
                     }
                 }
                 &_images{
+                    margin-top: 10px;
                     width: 301px;
                     height: 263px;
                     &_one{
+                        width: 169px;
+                        height: 154px;
                         flex-grow: 1;
+                        &_img{
+                            width: 169px;
+                            height: 154px;
+                        }
                     }
                     &_two{
+                        position: relative;
+                        top: 154px;
+                        left: -54px;
+                        width: 175px;
+                        height: 109px;
                         flex-grow: 1;
+                        &_img{
+                            width: 175px;
+                            height: 109px;
+                        }
                     }
                 }
             }
+        }
+        &_about{
+            &_wrapper{
+                display: block;
+                width: 305px;
+                height: 332px;
+                &_img{
+                    width: 100%;
+                    height: 213px;
+                    &_one{
+                        width: 181px;
+                        height: 124px;
+                        &_png{
+                            width: 181px;
+                            height: 124px;
+                        }
+                    }
+                    &_two{
+                        position: relative;
+                        top: 124px;
+                        width: 132px;
+                        height: 86px;
+                        &_png{
+                            width: 132px;
+                            height: 86px;
+                        }
+                    }
+                }
+                &_text{
+                    position: absolute;
+                    top: 1178px;
+                    &_title{
+                        @include Istok(700,24px)
+                    }
+                    &_sub-title{
+                        width: 274px;
+                        @include Jost(400,16px)
+                    }
+                }
+            }
+        }
+        &_Ukraine{
+            &_wrapper{
+                &_text{
+                    width: 317px;
+                    @include Istok(400,16px);
+                }
+                &_imgs{
+                    width: 304px;
+                    height: 374px;
+                    &_left-container{
+                        width: 150px;
+                        &_group1{
+                            display: flex;
+                            flex-direction: column;
+                            width: 150px;
+                            height: 374px;
+                            &_left{
+                                width: 144px;
+                                height: 328px;
+                            }
+                            &_right-container{
+                                width: 150px;
+                                height: 128px;
+                                &_top{
+                                   display: none;
+                                }
+                                &_down{
+                                    width: 150px;
+                                    height: 128px;
+                                }
+                            }
+                        }
+                        &_group2{
+                            width: 144px;
+                            display: flex;
+                            flex-direction: column;
+                            &_left{
+                                width: 144px;
+                                height: 154px;
+                            }
+                            &_right{
+                                width: 138px;
+                                height: 207px;
+                            }
+                        }
+                    }
+                    &_long{
+                        display: none;
+                    }
+                }
+            }
+            
         }
     }
 }
