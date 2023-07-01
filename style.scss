@@ -202,7 +202,7 @@
             height: 708px;
             &_text{
                 width: 780px;
-                height: 138px;
+                height: auto;
                 @include Istok(700,48px);
                 text-align: center;
                 color: white;
@@ -213,6 +213,7 @@
                 height: 549px;
                 justify-content: space-between;
                 &_left-container{
+                    margin-top: 22px;
                     display: flex;
                     flex-direction: column;
                     row-gap: 21px;
@@ -220,7 +221,6 @@
                     height: 549px;
                     &_group1{
                         display: flex;
-                        justify-content: center;
                         align-items: center;
                         width: 764px;
                         height: 264px;
@@ -300,6 +300,14 @@
             }
         }
     }
+    &_proects{
+        &_wrapper{
+            &_title{
+                margin-top: 0;
+                @include Istok(700,48px)
+            }
+        }
+    }
 }
 .footer{
     display: flex;
@@ -344,9 +352,9 @@
             }
             &_social-container{
                 display: flex;
-                justify-content: space-between;
+                column-gap: 34.09px;
                 width: 265.045px;
-                height: 64px;;
+                height: 64px;
             }
         }
 
@@ -361,7 +369,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 65.045px;
+    width: 65.04px;
     height: 64px;
     border-radius: 50%;
     background: yellow;
@@ -472,7 +480,9 @@
                 &_text{
                     position: absolute;
                     top: 1178px;
+                    width: 374px;
                     &_title{
+                        width: 374px;
                         @include Istok(700,24px)
                     }
                     &_sub-title{
@@ -494,11 +504,15 @@
                     height: 374px;
                     &_left-container{
                         width: 150px;
+                        flex-direction: row-reverse;
+                        justify-content: start;
+                        column-gap: 16px;
                         &_group1{
                             display: flex;
                             flex-direction: column;
                             width: 150px;
                             height: 374px;
+                            row-gap: 8px;
                             &_left{
                                 width: 144px;
                                 height: 328px;
@@ -519,6 +533,7 @@
                             width: 144px;
                             display: flex;
                             flex-direction: column;
+                            row-gap: 13px;
                             &_left{
                                 width: 144px;
                                 height: 154px;
@@ -535,6 +550,102 @@
                 }
             }
             
+        }
+        &_proects{
+            height: 1223px;
+            align-items: normal;
+            &_wrapper{
+                &_title{
+                    margin-top: 0;
+                    @include Istok(700,20px)
+                }
+                &_container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &_card{
+                        width: 279px;
+                        height: 347px;
+                        &_img{
+                            width: 257px;
+                            height: 166px;
+                        }
+                        &_title{
+                            @include Jost(700,24px)
+                        }
+                        &_sub-title{
+                            @include Jost(400,16px)
+                        }
+                        &_sub-title2{
+                            @include Jost(400,24px)
+                        }
+                        &_button{
+                            width: 179px;
+                            height: 43px;
+                            @include Jost(400,20px)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        &_wrapper{
+            width: 277px;
+            height: 272px;
+            &_logo{
+                @include Istok(400,24px)
+            }
+            &_content{
+                display: block;
+                width: 374px;
+                &_politika-container{
+                    height:103px;
+                    width: 277px;
+                    &_processing{
+                        @include Istok(400,16px)
+                    }
+                    &_privacy{
+                        @include Istok(400,16px)
+                    }
+                    &_politika-title{
+                        width: 374px;
+                        @include Istok(400,16px)
+                    }
+                }
+                &_social-container{
+                    margin-top: 48px;
+                    column-gap: 39px;
+                    justify-content: center;
+                    &_instagram{
+                        width: 39px;
+                        height: 36px;
+                        &_img{
+                            width: 22.515px;
+                            height: 22.634px;
+                        }
+                    }
+                    &_facebook{
+                        width: 38.89px;
+                        height: 36.009px;
+                        &_img{
+                            width: 22.515px;
+                            height: 22.634px;
+                        }
+                    }
+                    &_twitter{
+                        width: 38.89px;
+                        height: 36.009px;
+                        &_img{
+                            width: 22.515px;
+                            height: 22.634px;
+                        }
+                    }
+                }
+            }
+            &_C{
+                @include Istok(400,12px)
+            }
         }
     }
 }
