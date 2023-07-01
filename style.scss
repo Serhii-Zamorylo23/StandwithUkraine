@@ -489,6 +489,7 @@
                     @include Istok(400,16px);
                 }
                 &_imgs{
+                    display: flex;
                     width: 304px;
                     height: 374px;
                     &_left-container{
